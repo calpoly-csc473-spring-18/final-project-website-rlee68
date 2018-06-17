@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<title>CSC 473: Final Project</title>
+
+<!--
+
+Template 2100 Artist
+
+http://www.tooplate.com/view/2100-artist
+
+-->
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Tooplate">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/tooplate-style.css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+<!-- PRE LOADER -->
+<div class="preloader">
+     <div class="spinner">
+          <span class="spinner-rotate"></span>
+     </div>
+</div>
+
+
+<!-- HOME SECTION -->
+<div class="container">
+     <div class="row">
+          <section id="home" class="parallax-section">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <div class="home-wrapper">
+                         <h3 class="wow fadeInUp" data-wow-delay="0.4s">Advanced Rendering Techniques</h3>
+                         <h1 class="wow fadeInUp" data-wow-delay="0.6s">Final Project: Depth of Field</h1>
+                         <h3 class="wow fadeInUp" data-wow-delay="0.6s">Rachel Lee</h3>
+                         <a href="#about" class="wow fadeInUp smoothScroll arrow-btn" data-wow-delay="1s"><i class="fa fa-angle-double-down"></i></a>
+                    </div>
+               </div>
+
+          </section>
+     </div>
+</div>
+
+
+<!-- ABOUT SECTION -->
+<section id="about" class="parallax-section">
+     <div class="container">
+          <div class="row">
+               <div class="col-md-8 col-sm-12">
+                    <div class="about-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.6s">
+                            <h3>Raytracer</h3>
+                            <h2>Features</h2>
+                            <ul style="list-style-type:none">
+								<li>POV File Parsing</li>
+								<li>Simple Geometry</li>
+									<ul style="list-style-type:none">
+										<li>Box</li>
+										<li>Sphere</li>
+										<li>Triangle</li>
+										<li>Plane</li>
+									</ul>
+								<li>Shading</li>
+									<ul style="list-style-type:none">
+										<li>Blinn-Phong</li>
+										<li>Cook-Torrance</li>
+									</ul>
+								<li>Reflections</li>
+								<li>Refractions</li>
+								<li>Spatial Data Structures</li>
+								<li>Super Sample Anti-Aliasing</li>
+								<li>Depth of Field </li>
+							</ul>
+                         </div>
+                         <div class="wow fadeInUp" data-wow-delay="0.8s">
+                              <p>For my final project I decided to implement the <b>Depth of Field</b> rendering technique. The reason why I chose this was because it creates an image that is more realistic and looks like a focused picture. </p>
+                              <p>To implement the Depth of Field, you must follow these steps:</p>
+                              <ol>
+                              	<li>Cast a ray, and find the point on the ray with the given focal length.</li>
+                              	<li>Select a random origin on the aperture</li>
+                              	<li>Find the direction vector from the origin to the calculated point</li>
+                              	<li>Use the new origin and direction to create a new ray</li>
+                              	<li>Repeat the steps 128 times. With the final color divide it by 128</li>
+                              </ol>
+                         </div>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- WORK SECTION -->
+<section id="work" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <!-- SECTION TITLE -->
+                    <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                         <h2>Rendered Scenes</h2>
+                         <p>To demonstrate the depth of field rendering technique, I rendered 6 different POV scenes with varying focal lengths.</p>
+                    </div>
+               </div>
+
+               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.4s">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                         <a href="images/work-1.jpg" class="image-popup">
+                              <img src="images/work-1.jpg" class="img-responsive" alt="Focal Length: 30">
+                         </a>
+                    </div>
+                    <h4>Focal Length: 30</h4>
+               </div>
+
+               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.6s">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                         <a href="images/work-2.jpg" class="image-popup">
+                              <img src="images/work-2.jpg" class="img-responsive" alt="Focal Length: 15">
+                         </a>
+                    </div>
+                    <h4>Focal Length: 15</h4>
+               </div>
+
+               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.8s">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                         <a href="images/work-3.jpg" class="image-popup">
+                              <img src="images/work-3.jpg" class="img-responsive" alt="Focal Length: 21">
+                         </a>
+                    </div>
+                    <h4>Focal Length: 21</h4>
+               </div>
+
+               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.8s">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                         <a href="images/work-4.jpg" class="image-popup">
+                              <img src="images/work-4.jpg" class="img-responsive" alt="Focal Length: 14">
+                         </a>
+                    </div>
+                    <h4>Focal Length: 14</h4>
+               </div>
+
+               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.8s">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                         <a href="images/work-5.jpg" class="image-popup">
+                              <img src="images/work-5.jpg" class="img-responsive" alt="Focal Length: 8">
+                         </a>
+                    </div>
+                    <h4>Focal Length: 8</h4>
+               </div>
+
+               <div class="wow fadeInUp col-md-3 col-sm-6" data-wow-delay="0.8s">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                         <a href="images/work-6.jpg" class="image-popup">
+                              <img src="images/work-6.jpg" class="img-responsive" alt="Focal Length: 19">
+                         </a>
+                    </div>
+                    <h4>Focal Length: 19</h4>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<!-- SCRIPTS -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
